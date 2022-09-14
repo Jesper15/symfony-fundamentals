@@ -124,7 +124,7 @@ class __TwigTemplate_052912fba6a432fa75b6be01eda9c1b1 extends Template
                     |
                     <span>";
             // line 38
-            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["mix"], "createdAt", [], "any", false, false, false, 38), "d-m-Y"), "html", null, true);
+            echo $this->extensions['Knp\Bundle\TimeBundle\Twig\Extension\TimeExtension']->diff(twig_get_attribute($this->env, $this->source, $context["mix"], "createdAt", [], "any", false, false, false, 38));
             echo "</span>
                 </div>
             </div>
@@ -200,7 +200,7 @@ class __TwigTemplate_052912fba6a432fa75b6be01eda9c1b1 extends Template
                     |
                     <span>{{ mix.genre }}</span>
                     |
-                    <span>{{ mix.createdAt|date('d-m-Y') }}</span>
+                    <span>{{ mix.createdAt|ago }}</span>
                 </div>
             </div>
             {% endfor %}

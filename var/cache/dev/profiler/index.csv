@@ -25,3 +25,9 @@ af090d,127.0.0.1,GET,https://localhost:8000/browse/all-accordion,1663148525,,200
 8e1625,127.0.0.1,GET,https://localhost:8000/browse,1663148738,,500
 8a8e7f,127.0.0.1,GET,https://localhost:8000/browse,1663148762,,200
 667063,127.0.0.1,GET,https://localhost:8000/browse,1663148771,,200
+0957a3,127.0.0.1,GET,https://localhost:8000/browse,1663149429,,200
+e6c55e,127.0.0.1,GET,https://localhost:8000/browse,1663149432,,200
+c56b4e,127.0.0.1,GET,https://localhost:8000/browse,1663153577,193f71,500
+193f71,127.0.0.1,GET,https://localhost:8000/browse,1663153577,,500
+bdcbc9,127.0.0.1,GET,https://localhost:8000/browse,1663153583,,200
+7b5789,127.0.0.1,GET,https://localhost:8000/browse,1663154923,,200
