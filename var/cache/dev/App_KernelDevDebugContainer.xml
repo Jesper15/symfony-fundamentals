@@ -2867,17 +2867,18 @@
         <argument key="logger" type="service_closure" id="monolog.logger"/>
       </argument>
     </service>
-    <service id=".service_locator.eAcXx9a" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.d78gLKG" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
+        <argument key="cache" type="service_closure" id="cache.app"/>
         <argument key="httpClient" type="service_closure" id=".debug.http_client"/>
       </argument>
     </service>
-    <service id=".service_locator.vrQ.Z7p" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.eFqNPWT" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="App\Controller\SongController::getSong" type="service_closure" id=".service_locator.B2N.LKQ"/>
-        <argument key="App\Controller\VinylController::browse" type="service_closure" id=".service_locator.eAcXx9a"/>
+        <argument key="App\Controller\VinylController::browse" type="service_closure" id=".service_locator.d78gLKG"/>
         <argument key="App\Kernel::loadRoutes" type="service_closure" id=".service_locator.xUrKPVU"/>
         <argument key="App\Kernel::registerContainerConfiguration" type="service_closure" id=".service_locator.xUrKPVU"/>
         <argument key="App\Kernel::terminate" type="service_closure" id=".service_locator.bRdave9"/>
@@ -2885,7 +2886,7 @@
         <argument key="kernel::registerContainerConfiguration" type="service_closure" id=".service_locator.xUrKPVU"/>
         <argument key="kernel::terminate" type="service_closure" id=".service_locator.bRdave9"/>
         <argument key="App\Controller\SongController:getSong" type="service_closure" id=".service_locator.B2N.LKQ"/>
-        <argument key="App\Controller\VinylController:browse" type="service_closure" id=".service_locator.eAcXx9a"/>
+        <argument key="App\Controller\VinylController:browse" type="service_closure" id=".service_locator.d78gLKG"/>
         <argument key="kernel:loadRoutes" type="service_closure" id=".service_locator.xUrKPVU"/>
         <argument key="kernel:registerContainerConfiguration" type="service_closure" id=".service_locator.xUrKPVU"/>
         <argument key="kernel:terminate" type="service_closure" id=".service_locator.bRdave9"/>
@@ -3247,12 +3248,12 @@
     <service id="debug.argument_resolver.request.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\RequestValueResolver"/>
     <service id="debug.argument_resolver.session.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\SessionValueResolver"/>
     <service id="debug.argument_resolver.service.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver">
-      <argument type="service" id=".service_locator.vrQ.Z7p"/>
+      <argument type="service" id=".service_locator.eFqNPWT"/>
     </service>
     <service id="debug.argument_resolver.default.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver"/>
     <service id="debug.argument_resolver.variadic.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\VariadicValueResolver"/>
     <service id="debug.argument_resolver.not_tagged_controller.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\NotTaggedControllerValueResolver">
-      <argument type="service" id=".service_locator.vrQ.Z7p"/>
+      <argument type="service" id=".service_locator.eFqNPWT"/>
     </service>
     <service id=".debug.http_client.inner" class="Symfony\Contracts\HttpClient\HttpClientInterface">
       <argument type="collection"/>
@@ -3702,7 +3703,7 @@
     <service id="Knp\Bundle\TimeBundle\DateTimeFormatter" alias="time.datetime_formatter"/>
     <service id="container.env_var_processors_locator" alias=".service_locator.gSv9zYw" public="true"/>
     <service id="twig.loader.filesystem" alias="twig.loader.native_filesystem"/>
-    <service id="argument_resolver.controller_locator" alias=".service_locator.vrQ.Z7p"/>
+    <service id="argument_resolver.controller_locator" alias=".service_locator.eFqNPWT"/>
     <service id="twig.loader" alias="twig.loader.native_filesystem"/>
     <service id="Psr\Log\LoggerInterface $requestLogger" alias="monolog.logger.request"/>
     <service id="Psr\Log\LoggerInterface $consoleLogger" alias="monolog.logger.console"/>
@@ -3717,7 +3718,7 @@
     <service id="Psr\Log\LoggerInterface $deprecationLogger" alias="monolog.logger.deprecation"/>
     <service id=".service_locator.XDGmiR3" alias=".1_ServiceLocator~4.3L1Nt"/>
     <service id=".service_locator.0GV1BZZ" alias=".service_locator.gSv9zYw"/>
-    <service id=".service_locator.4ia3uYS" alias=".service_locator.vrQ.Z7p"/>
+    <service id=".service_locator.cArNdQR" alias=".service_locator.eFqNPWT"/>
     <service id=".service_locator.O24_MAy" alias=".service_locator.yY.p4P7"/>
     <service id=".service_locator._eRAkJb" alias=".service_locator.jIxfAsi"/>
     <service id="event_dispatcher" alias="debug.event_dispatcher" public="true"/>
@@ -3740,7 +3741,7 @@
     <service id=".service_locator.FatRZu2" alias=".service_locator.bRdave9"/>
     <service id=".service_locator.uo5c0SP" alias=".service_locator.xUrKPVU"/>
     <service id=".service_locator.6u2lGWO" alias=".service_locator.B2N.LKQ"/>
-    <service id=".service_locator..4VyLpR" alias=".service_locator.eAcXx9a"/>
+    <service id=".service_locator.JOkmU_K" alias=".service_locator.d78gLKG"/>
     <service id=".service_locator.eT4XWle" alias=".service_locator.jIxfAsi"/>
     <service id=".service_locator.u6DWx23" alias=".service_locator.cXsfP3P"/>
   </services>
